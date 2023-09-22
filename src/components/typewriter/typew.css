@@ -1,0 +1,39 @@
+
+.typewriter-container {
+    text-align: left; /* Align text to the left */
+    margin-bottom: 20px; /* Add spacing between text elements */
+    background-color: #1d1d1c;
+    margin-left: 15%;
+    margin-top: 5%;
+  }
+  
+  .typewriter-text {
+    display: inline-block;
+    overflow: hidden; /* Hide overflow text */
+    border-right: 0.08em solid orange; /* Add a blinking cursor effect (adjust color as needed) */
+    white-space: nowrap; /* Prevent text from wrapping */
+    letter-spacing: 0.1em; /* Adjust letter spacing for the typewriter effect */
+    animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite; /* Typewriter animation */
+    font-size: 30px; /* Adjust the font size as needed */
+    color: #ff0000; 
+ 
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: orange; /* Adjust cursor color */
+    }
+  }

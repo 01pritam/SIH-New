@@ -1,0 +1,108 @@
+/* projectlist.css */
+
+/* Styles for the carousel */
+
+.carousel-root {
+  position: relative;
+}
+
+/* Small arrow icons positioned over the image */
+.carousel-arrow-icon {
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transform: translateY(-50%);
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  border-radius: 50%;
+  color: white;
+  display: none; /* Initially hide the arrows */
+  z-index: 2;
+}
+
+/* Position the left arrow icon on the left side */
+.carousel-arrow-icon-left {
+  left: 10px;
+}
+
+/* Position the right arrow icon on the right side */
+.carousel-arrow-icon-right {
+  right: 10px;
+}
+
+/* Show the arrow icons when hovering over the project-card */
+.project-card:hover .carousel-arrow-icon {
+  display: block; /* Show the arrows on hover */
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10px; /* Remove the gap between cards on all screens */
+}
+
+.project-card {
+  z-index: 5;
+  flex: 0 0 calc(30% + 3px); /* 33.33% of screen width with no gap on larger screens (laptops) */
+  max-width: none; /* Remove max-width to make cards larger */
+  background: #ffff;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 10px; /* Space between rows */
+}
+
+.project-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Apply object-fit: cover to the images within .project-image */
+.project-image img {
+  object-fit: cover;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+p {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+.learn-more {
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  padding: 3px 8px;
+  border-radius: 3px;
+  font-size: 12px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.learn-more:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 767px) {
+  .project-list {
+    flex-direction: column; /* Display cards in a column on small screens (phones) */
+  }
+  .project-card {
+    flex: 1; /* Take up full width on small screens (phones) */
+    width: 100%; /* Full width on small screens (phones) */
+    margin-bottom: 10px; /* Space between rows on small screens (phones) */
+  }
+}

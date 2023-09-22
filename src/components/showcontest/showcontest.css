@@ -1,0 +1,73 @@
+/* Style for the Contest List */
+
+.contest-list {
+    /* background-image: url(https://img.freepik.com/premium-vector/versus-background-with-pink-green-game-battle-challenge-fight-competition-contest-team-boxing-championship-clash-combat-tournament-conflict-duel-mma-football_181182-38508.jpg); */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style for the Contest Cards */
+  .contest-card {
+    border: 1px solid #ddd;
+    height: 82%;
+    width: 50%;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .contest-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .contest-card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .contest-card h3 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #007BFF;
+  }
+  
+  .contest-card p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .contest-card button {
+    background-color: #4f80b1;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contest-card button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Center the Contest List */
+  .contest-list {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #1d1d1c;
+  }
+  
+  /* Center the Contest Cards */
+  .contest-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }

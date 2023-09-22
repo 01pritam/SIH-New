@@ -1,0 +1,291 @@
+/* home.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+/* Container for the Home component */
+.home-container {
+  text-align: center;
+  background-color: #1d1d1c; /* Background color for the entire container */
+  padding: 20px;
+}
+
+/* Style for the Home component title */
+.home-title {
+  font-size: 36px; /* Increase the font size */
+  margin-top: 20px; /* Increase the top margin */
+  color: #f9f6f6; /* Text color for the title */
+}
+
+/* Style for the carousel container */
+.carousel-root {
+  position: relative;
+  /* width: calc(33.33% - 20px); */
+  
+  
+}
+
+/* Style for Carousel Arrows (Left and Right) */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(5, 7, 9, 0.5); /* Background color of the arrow */
+  color: #f8f8f5; /* Arrow color */
+  font-size: 24px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  z-index: 2;
+  width: 40px;
+}
+
+.carousel-arrow:hover {
+  background-color: rgba(20, 76, 110, 0.7); /* Background color on hover */
+}
+
+/* Style for Left Arrow */
+.carousel-arrow.left {
+  left: 10px; /* Adjust the position as needed */
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* Style for Right Arrow */
+.carousel-arrow.right {
+  right: 10px; /* Adjust the position as needed */
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+/* Style for Carousel Slides */
+.carousel .slider-wrapper {
+  overflow: visible; /* Ensure the slides are visible */
+}
+
+/* Style for individual carousel projects */
+.carousel-project {
+  width: 60%;
+  padding: 20px;
+  background-color: #110e0e; /* Background color for project */
+  border: 1px solid #e0e0e0;
+  border-radius: 35px;
+  box-shadow: 0px 4px 8px rgb(202, 201, 201);
+  margin: 20px auto; /* Adjust the margins as needed */
+}
+
+.carousel-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.carousel-project-title {
+  font-size: 24px; /* Decrease the font size slightly */
+  margin-top: 10px;
+  color: #fdf9f9; /* Text color for the project title */
+}
+
+.carousel-description {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #f8f3f3; /* Text color for the project description */
+}
+
+.carousel-tags {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #f5f2f2; /* Text color for the tags */
+}
+
+.carousel-project-type {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #f9f5f5; /* Text color for the project type */
+}
+
+/* Style for footer */
+footer {
+  position: relative;
+  bottom: 0;
+}
+
+@media (max-height:800px) {
+  footer {
+      position: static;
+  }
+  header {
+      padding-top: 40px;
+  }
+}
+
+.footer-distributed {
+  background-color: #383d42;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 50px 50px 60px 50px;
+  margin-top: 80px;
+}
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+  width: 20%;
+}
+
+.footer-distributed h3 {
+  color: #ffffff;
+  font: normal 36px 'Cookie', cursive;
+  margin: 0;
+}
+
+
+.footer-distributed h3 span {
+  color: #c33809;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: #e0ac1c;
+  text-decoration: none;
+  ;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+  width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+.footer-distributed .footer-icons a:hover {
+  background-color: #3F71EA;
+}
+
+.footer-links a:hover {
+  color: #3F71EA;
+}
+
+@media (max-width: 880px) {
+  .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+  }
+  .footer-distributed .footer-center i {
+      margin-left: 0;
+  }
+}       
+      
+
+.mid-page {
+  position: relative;
+  background-color: #1d1d1c;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 50px 50px 60px 50px;
+  margin-top: 80px;
+}
+
+.mid1 h3{
+  color: #e0e0e0;
+  text-align: center;
+}

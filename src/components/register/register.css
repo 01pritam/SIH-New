@@ -1,0 +1,95 @@
+/* register.css */
+
+.register {
+    max-width: 400px;
+    margin-left: 38.1%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 26%;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #e4d8d8;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .button.login {
+    background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease-in-out;
+  letter-spacing: 1.5px;
+  height: 40px;
+  margin-top: 17%;
+  }
+  
+  .button.login:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  div {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #fdfdfc;
+  }
+  
+  .alert {
+    color: #f00;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  /* Additional styling for confirmation message (optional) */
+  .confirm-message {
+    color: #28a745;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .project-card {
+    width: calc(56.33% - 20px);
+    margin-top:0%;
+    margin-left:23%;
+    padding: 10px;
+    margin-bottom: 36px;
+    border:1px solid #f9f4f4;
+    border-radius: 25px;
+    box-shadow: 7px 8px 10px rgba(238, 240, 241, 0.2);
+    background-color: #fefef9;
+    transition: transform 0.2s ease-in-out;
+  }
